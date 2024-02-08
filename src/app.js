@@ -30,5 +30,14 @@ const indexaction = randomIndex(action.length);
 const indexwhat = randomIndex(what.length);
 const indexwhen = randomIndex(when.length);
 
-excuse = wh; // change the html page to show the ramdom excuse
+excuse =
+  who[indexWho] +
+  " " +
+  action[indexaction] +
+  " " +
+  what[indexwhat] +
+  " " +
+  when[indexwhen];
+
+// change the html page to show the ramdom excuse
 document.querySelector("div").innerText = excuse;
