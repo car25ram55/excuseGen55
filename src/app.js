@@ -26,18 +26,20 @@ window.onload = function() {
 };
 
 const indexWho = randomIndex(who.length);
-const indexaction = randomIndex(action.length);
-const indexwhat = randomIndex(what.length);
-const indexwhen = randomIndex(when.length);
+const indexAction = randomIndex(action.length);
+const indexWhat = randomIndex(what.length);
+const indexWhen = randomIndex(when.length);
 
-excuse =
+// Declare the excuse variable before using it
+let excuse =
   who[indexWho] +
   " " +
-  action[indexaction] +
+  action[indexAction] +
   " " +
-  what[indexwhat] +
+  what[indexWhat] +
   " " +
-  when[indexwhen];
+  when[indexWhen];
 
-// change the html page to show the ramdom excuse
-document.querySelector("div").innerText = excuse;
+// change the html page to show the random excuse
+document.querySelector("div").classList.add("excuse-style");
+document.querySelector("div").innerText = excuse; // Set the text

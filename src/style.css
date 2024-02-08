@@ -1,1 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.excuse-style {
+  font-size: 48px; /* Change font size */
+  color: red; /* Change font color */
+  /* Add more styles as needed */
+}
